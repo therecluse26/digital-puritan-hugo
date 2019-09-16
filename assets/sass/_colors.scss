@@ -1,0 +1,58 @@
+@import "_color-transformations.scss";
+
+/* Main color palette */
+$light-prime: $white-dark;
+$light-second: $grey-light;
+$dark-prime: mix($black-light, $blue-darker, 60%);
+$dark-second: lighten($dark-prime, 3%);
+$dark-third: lighten($dark-second, 10%);
+$blue-greenish: mix($blue-lighter, $green-light, 80%);
+
+// Creates a list of all colors for looping over
+$all-colors: (
+    "light-prime": $light-prime,
+    "light-second": $light-second,
+    "dark-prime": $dark-prime,
+    "dark-second": $dark-second,
+    "dark-third": $dark-third,
+    "blue-greenish": $blue-greenish
+);
+
+// Loops over $all-colors map and creates background and text classes for each color
+@each $name, $val in $all-colors {
+    .txt-#{$name} {
+        color: #{$val} !important;
+    }
+    .bg-#{$name} {
+        background-color: #{$val}  !important;
+    }    
+}
+
+
+/* Domain-specific color vars */
+
+/* Page attribute colors */
+$link-color: mix($blue-lightest, $green-lightest, 50%);
+
+
+/* Code syntax highlighting colors */
+$code-bg-color: $dark-second;
+$code-key: $light-prime;
+$code-key-const: $light-prime;
+$code-key-dec: $light-prime;
+$code-key-ns: $light-prime;
+$code-key-ps: $light-prime;
+$code-key-res: $light-prime;
+$code-key-type: $light-prime;
+$code-name-attr: $light-prime;
+$code-name-builtin: $light-prime;
+$code-name-class: $light-prime;
+$code-name-const: $light-prime;
+$code-name-deco: $light-prime;
+$code-name-ent: $light-prime;
+$code-name-ex: $light-prime;
+$code-name-func: $light-prime;
+$code-name-label: $light-prime;
+$code-name-ns: $light-prime;
+$code-name-tag: $light-prime;
+$code-name-var: $light-prime;

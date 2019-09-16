@@ -1,0 +1,92 @@
+// Modifier constants
+// Change these to tweak the difference in shade between derivations
+$DARK: 10%;
+$DARKER: $DARK * 1.75;
+$DARKEST: $DARK * 2.5;
+$LIGHT: 10%;
+$LIGHTER: $LIGHT * 1.75;
+$LIGHTEST: $LIGHT * 2.5;
+
+// Primary colors from which others are derived
+// Tweak these first and foremost
+$green: #198b3c;
+$blue: #173774;
+$red: #bf0d3e;
+$yellow: #ffe600;
+$black: #0f0f0f;
+$white: #f0f0f0;
+$grey: mix($black, $white);
+
+// Color derivations (this shouldn't need touched)
+$white-pure: lighten($white, $LIGHT);
+$white-dark: darken($white, $DARK);
+$white-darker: darken($white, $DARKER);
+$white-darkest: darken($white, $DARKEST);
+
+$black-lightest: lighten($black, $LIGHTEST);
+$black-lighter: lighten($black, $LIGHTER);
+$black-light: lighten($black, $LIGHT);
+$black-pure: darken($black, $DARK);
+
+
+$grey-lightest: lighten($grey, $LIGHTEST);
+$grey-lighter: lighten($grey, $LIGHTER);
+$grey-light: lighten($grey, $LIGHT);
+$grey-dark: darken($grey, $DARK);
+$grey-darker: darken($grey, $DARKER);
+$grey-darkest: darken($grey, $DARKEST);
+
+$red-lightest: lighten($red, $LIGHTEST);
+$red-lighter: lighten($red, $LIGHTER);
+$red-light: lighten($red, $LIGHT);
+$red-dark: darken($red, $DARK);
+$red-darker: darken($red, $DARKER);
+$red-darkest: darken($red, $DARKEST);
+
+$green-lightest: lighten($green, $LIGHTEST);
+$green-lighter: lighten($green, $LIGHTER);
+$green-light: lighten($green, $LIGHT);
+$green-dark: darken($green, $DARK);
+$green-darker: darken($green, $DARKER);
+$green-darkest: darken($green, $DARKEST);
+
+$blue-lightest: lighten($blue, $LIGHTEST);
+$blue-lighter: lighten($blue, $LIGHTER);
+$blue-light: lighten($blue, $LIGHT);
+$blue-dark: darken($blue, $DARK);
+$blue-darker: darken($blue, $DARKER);
+$blue-darkest: darken($blue, $DARKEST);
+
+$yellow-lightest: lighten($yellow, $LIGHTEST);
+$yellow-lighter: lighten($yellow, $LIGHTER);
+$yellow-light: lighten($yellow, $LIGHT);
+$yellow-dark: darken($yellow, $DARK);
+$yellow-darker: darken($yellow, $DARKER);
+$yellow-darkest: darken($yellow, $DARKEST);
+
+$purple: mix($red, $blue, 50%);
+$purple-lightest: lighten($purple, $LIGHTEST);
+$purple-lighter: lighten($purple, $LIGHTER);
+$purple-light: lighten($purple, $LIGHT);
+$purple-dark: darken($purple, $DARK);
+$purple-darker: darken($purple, $DARKER);
+$purple-darkest: darken($purple, $DARKEST);
+
+$orange: mix($red-light, $yellow, 60%);
+$orange-lightest: lighten($orange, $LIGHTEST);
+$orange-lighter: lighten($orange, $LIGHTER);
+$orange-light: lighten($orange, $LIGHT);
+$orange-dark: darken($orange, $DARK);
+$orange-darker: darken($orange, $DARKER);
+$orange-darkest: darken($orange, $DARKEST);
+
+$brown: mix($yellow-darkest, $orange-darkest, 70%);
+$brown-lightest: lighten($brown, $LIGHTEST);
+$brown-lighter: lighten($brown, $LIGHTER);
+$brown-light: lighten($brown, $LIGHT);
+$brown-dark: darken($brown, $DARK);
+$brown-darker: darken($brown, $DARKER);
+$brown-darkest: darken($brown, $DARKEST);
+
+$turquoise: mix($green-light, $blue-light, 50%);
+$cyan: mix($green-lighter, $blue-lighter, 40%);

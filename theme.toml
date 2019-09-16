@@ -1,0 +1,12 @@
+name = "Digital Puritan"
+license = "MIT"
+licenselink = "https://github.com/therecluse26/digital-puritan/blob/master/LICENSE"
+description = "A minimal Hugo theme designed to resemble a Linux terminal"
+homepage = "http://digitalreformer.com/"
+tags = ["tech", "minimal"]
+features = []
+min_version = "0.41"
+
+[author]
+  name = "therecluse26"
+  homepage = "http://digitalreformer.com"
